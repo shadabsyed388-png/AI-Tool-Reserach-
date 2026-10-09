@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SEO Meta Checker</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark">SEO</span>
+      <span class="brand-name">Meta Checker</span>
+    </div>
+    <button id="refresh" class="icon-btn" title="Re-analyze page" aria-label="Re-analyze page">↻</button>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab active" data-tab="overview" role="tab">Overview</button>
+    <button class="tab" data-tab="headings" role="tab">Headings</button>
+    <button class="tab" data-tab="social" role="tab">Social</button>
+    <button class="tab" data-tab="links" role="tab">Links</button>
+    <button class="tab" data-tab="schema" role="tab">Schema</button>
+  </nav>
+
+  <main id="content" class="content">
+    <div id="loading" class="state">Analyzing page…</div>
+  </main>
+
+  <footer class="app-footer">
+    <span id="url-foot" class="url-foot"></span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
